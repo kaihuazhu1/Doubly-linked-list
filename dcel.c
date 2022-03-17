@@ -135,7 +135,7 @@ void *execute_split(poly_t *poly, int *size, int *faces_size, int start_edge, in
     }
     free(g);
 
-    //stores old start and end edges before fixing 
+    // stores old start and end edges before fixing 
     int old_edge_end = poly->edges[start_edge].half_edge->index_end;
     int old_edge_start = poly->edges[end_edge].half_edge->index_start;
     halfedge_t *temp_1 = poly->edges[start_edge].half_edge->next;
