@@ -1,0 +1,1 @@
+valgrind --leak-check=full --show-leak-kinds=all -s --track-origins=yes ./voronoi1 dataset_10.csv polygon_irregular.txt test.txt < poly_4split.txt
